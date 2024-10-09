@@ -5,7 +5,7 @@ import axios from 'axios';
 const QuizList = ({ quizzes, onQuizDeleted, onQuizSelect }) => {
     const handleDelete = async (quizId) => {
         try {
-            await axios.delete(`https://assignment-2-ip8z.onrender.com/quizzes/${quizId}`);
+            await axios.delete(`https://sdn-asm2-hfmt.onrender.com/quizzes/${quizId}`);
             onQuizDeleted(quizId); // Notify parent component of the deleted quiz
         } catch (error) {
             console.error('Error deleting quiz:', error);
@@ -31,7 +31,7 @@ const QuizList = ({ quizzes, onQuizDeleted, onQuizSelect }) => {
                        
                     }}>
                         <ListItemText primary={quiz.title}  />
-                        <Button onClick={() => handleDelete(quiz._id)} color="secondary">
+                        <Button onClick={() => handleDelete(quiz._id)} color="warning">
                             Delete
                         </Button>
                     </ListItem>

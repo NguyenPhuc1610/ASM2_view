@@ -26,7 +26,7 @@ const DisplayQuestion = ({ question, onUpdateQuestion }) => {
 
     const handleUpdate = async () => {
         try {
-            const response = await axios.put(`https://assignment-2-ip8z.onrender.com/questions/${editedQuestion._id}`, {
+            const response = await axios.put(`https://sdn-asm2-hfmt.onrender.com/questions/${editedQuestion._id}`, {
                 text: editedQuestion.text,
                 options: editedQuestion.options,
                 correctAnswerIndex: editedQuestion.correctAnswerIndex

@@ -13,7 +13,7 @@ const QuizDisplay = ({ quiz, onQuizUpdated, onDelete }) => {
             const updatedQuiz = { title, description }; // Chỉ gửi title và description
 
             // Gửi yêu cầu PUT tới backend để cập nhật quiz
-            const response = await axios.put(`https://assignment-2-ip8z.onrender.com/quizzes/${quiz._id}`, updatedQuiz);
+            const response = await axios.put(`https://sdn-asm2-hfmt.onrender.com/quizzes/${quiz._id}`, updatedQuiz);
 
             // Gọi hàm onQuizUpdated để cập nhật danh sách quizzes ở component cha
             onQuizUpdated(response.data);

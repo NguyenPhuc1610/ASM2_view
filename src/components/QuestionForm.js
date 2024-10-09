@@ -15,7 +15,7 @@ const QuestionForm = ({ onQuestionAdded }) => {
         const options = optionsString.split(',').map(option => option.trim()); // Tách chuỗi thành mảng
 
         try {
-            const response = await axios.post('https://assignment-2-ip8z.onrender.com/questions', {
+            const response = await axios.post('https://sdn-asm2-hfmt.onrender.com/questions', {
                 text,
                 options,
                 correctAnswerIndex,

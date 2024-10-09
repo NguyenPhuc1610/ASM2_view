@@ -11,7 +11,7 @@ const QuizForm = ({ onQuizAdded }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://assignment-2-ip8z.onrender.com/quizzes', {
+            const response = await axios.post('https://sdn-asm2-hfmt.onrender.com/quizzes', {
                 title,
                 description,
             });

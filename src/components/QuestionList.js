@@ -11,7 +11,7 @@ const QuestionList = ({ questions, onQuestionDeleted, onQuestionSelect }) => {
 
     const handleDelete = async (questionId) => {
         try {
-            await axios.delete(`https://assignment-2-ip8z.onrender.com/questions/${questionId}`);
+            await axios.delete(`https://sdn-asm2-hfmt.onrender.com/questions/${questionId}`);
             onQuestionDeleted(questionId);
             setSnackbarMessage('Question deleted successfully!');
             setOpenSnackbar(true);

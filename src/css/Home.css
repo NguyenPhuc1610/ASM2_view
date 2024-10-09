@@ -1,0 +1,23 @@
+/* Căn giữa toàn bộ container theo chiều dọc nhưng đẩy lên phía trên */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Đẩy nội dung lên phía trên */
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 50px; /* Khoảng cách từ trên xuống, có thể điều chỉnh */
+}
+
+/* Tiêu đề "Welcome to Simple Quiz" */
+.home-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Các nút bấm, thêm khoảng cách và chiều rộng cố định */
+.home-button {
+    width: 200px;
+}
+
